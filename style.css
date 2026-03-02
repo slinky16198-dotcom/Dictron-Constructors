@@ -1,5 +1,5 @@
 .homepage {
-    background-image: url(homepageimage.jpg);
+    background-image: url(back.jpg);
     background-size: cover;
 }
 
@@ -19,6 +19,15 @@ li {
 
 a {
     text-decoration: none;
+    display: flex;
+padding: 10px;
+color: white;
+}
+a:hover{
+    color: black;
+    transform: translateX(8px);
+    transform: translateY(-8px);
+    transition: 0.5s;
 }
 header button{
     border-radius: 60px;
@@ -27,11 +36,18 @@ header button{
     color: white;
     background-color: blue;
 }
+header button:hover{
+      background-color:darkblue;
+    transform: translateX(-10px);
+    transform: translateY(-10px);
+    box-shadow:lightblue 3px 3px;
+    transition: 0.5s
+}
 .building{
     color: white;
     padding-top: 100px;
     padding-left: 60px;
-    font-size:70px;
+    font-size:60px;
 }
 .sustainable{
     color: white;
@@ -41,6 +57,12 @@ header button{
 .button{
     display: flex;
     padding-left: 75px;
+}
+.button :hover{
+    transform: translateX(4px);
+    transform: translateY(-4px);
+    color: lightblue;
+    transition: 0.5s;
 }
 main button{
     border-radius: 60px;
@@ -61,4 +83,88 @@ main button{
     padding-left: 75px;
     color: white;
     font-size: x-large;
+}
+.hhh{
+    display: flex;
+    justify-content: space-around; 
+    gap: 1em;
+    padding:20px;
+}
+.reliability{
+    border:none;
+    background-color:grey;
+    border-radius: 10px;
+    padding: 10px;
+}
+.quality{
+    border:none;
+    background-color:grey;
+    border-radius: 10px;
+    padding: 10px; 
+}
+.fair{
+  border:none;
+    background-color:grey;
+    border-radius: 10px;
+    padding: 10px   
+}
+.value-page{
+    background-color: rgb(189, 189, 175);
+}
+.middle{
+    display: flex;
+    gap: 30px;
+}
+.twoguys img{
+    border-radius: 29px;
+    height:50%;
+    width: 100%;
+}
+.end{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -450px;
+}
+.statistics{
+    display: flex;
+    justify-content: space-between;
+gap: 1em;
+}
+.s1{
+   border:none;
+    background-color:grey;
+    border-radius: 10px;
+    padding: 10px; 
+    height: 60%; 
+}
+.s2{
+   border:none;
+    background-color:grey;
+    border-radius: 10px;
+    padding: 10px;
+    height: 60%;  
+}
+.s3{
+    border:none;
+    background-color:grey;
+    border-radius: 10px;
+    padding: 10px; 
+    height: 60%; 
+}
+.middle button{
+    border-radius: 60px;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    margin-top: 50px;
+    background-color: blue;
+    font-weight: 900;
+
+}
+.middle button:hover{
+    background-color:darkblue;
+    transform: translateX(-10px);
+    transform: translateY(-10px);
+    box-shadow:lightblue 3px 3px;
+    transition: 0.5s;
 }
