@@ -1,0 +1,64 @@
+.homepage {
+    background-image: url(homepageimage.jpg);
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+header button{
+    border-radius: 60px;
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: blue;
+}
+.building{
+    color: white;
+    padding-top: 100px;
+    padding-left: 60px;
+    font-size:70px;
+}
+.sustainable{
+    color: white;
+    padding-left: 75px;
+    font-size:x-large;
+}
+.button{
+    display: flex;
+    padding-left: 75px;
+}
+main button{
+    border-radius: 60px;
+    padding: 10px;
+    border: none;
+}
+.button1{
+    padding-right: 30px;
+}
+.get{
+    color: white;
+    background-color: blue;
+}
+.our{
+    color:black;
+}
+.logo{
+    padding-left: 75px;
+    color: white;
+    font-size: x-large;
+}
