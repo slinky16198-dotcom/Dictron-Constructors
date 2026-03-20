@@ -24,9 +24,7 @@ padding: 10px;
 color: white;
 }
 a:hover{
-    color: black;
-    transform: translateX(8px);
-    transform: translateY(-8px);
+    color: rgb(153, 214, 234);
     transition: 0.5s;
 }
 header button{
@@ -35,16 +33,17 @@ header button{
     padding: 10px;
     color: white;
     background-color: blue;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 header button:hover{
       background-color:darkblue;
-    transform: translateX(-10px);
-    transform: translateY(-10px);
-    box-shadow:lightblue 3px 3px;
+  color: white;
+  
     transition: 0.5s
 }
 .building{
-    color: white;
+    color:whitesmoke;
     padding-top: 100px;
     padding-left: 60px;
     font-size:60px;
@@ -57,11 +56,12 @@ header button:hover{
 .button{
     display: flex;
     padding-left: 75px;
+    margin-top: 20px;
+  padding-bottom: 20px;
 }
-.button :hover{
-    transform: translateX(4px);
-    transform: translateY(-4px);
-    color: lightblue;
+.button button:hover{
+    background-color:darkblue;
+    color: rgb(153, 214, 234);
     transition: 0.5s;
 }
 main button{
@@ -92,33 +92,34 @@ main button{
 }
 .reliability{
     border:none;
-    background-color:grey;
+    background-color:rgb(215, 212, 212);
     border-radius: 10px;
     padding: 10px;
 }
 .quality{
     border:none;
-    background-color:grey;
+    background-color:rgb(215, 212, 212);
     border-radius: 10px;
     padding: 10px; 
 }
 .fair{
   border:none;
-    background-color:grey;
+    background-color:rgb(215, 212, 212);
     border-radius: 10px;
     padding: 10px   
 }
 .value-page{
-    background-color: rgb(189, 189, 175);
+    background-color: rgb(237, 237, 229);
 }
 .middle{
     display: flex;
     gap: 30px;
 }
 .twoguys img{
-    border-radius: 29px;
+    border-radius: 10px;
     height:50%;
-    width: 100%;
+    width: 80%;
+    margin-left: 27px;
 }
 .end{
     display: flex;
@@ -129,6 +130,7 @@ main button{
     display: flex;
     justify-content: space-between;
 gap: 1em;
+margin-top: 30px;
 }
 .s1{
    border:none;
@@ -305,4 +307,125 @@ body {
   background: #bbb;
   border-radius: 50%;
   margin: 0 5px;
+}
+.yoh{
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px
+}
+.words{
+  font-style: italic;
+  font-family: sans-serif;
+  color: #555 ;
+}
+html {
+    scroll-behavior: smooth;
+}
+section {
+    scroll-margin-top: 80px; 
+}
+/* --- RESPONSIVE ADJUSTMENTS --- */
+
+/* Tablet & Smaller Desktops (Under 1024px) */
+@media screen and (max-width: 1024px) {
+    .building {
+        font-size: 45px;
+        padding-left: 40px;
+    }
+    
+    .sustainable {
+        padding-left: 40px;
+    }
+
+    .button {
+        padding-left: 40px;
+    }
+
+    .middle {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .twoguys img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .end {
+        margin-top: 20px; /* Removes the -450px overlap for tablets */
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+/* Mobile Devices (Under 768px) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .logo {
+        padding-left: 0;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .building {
+        font-size: 32px;
+        padding-left: 20px;
+        padding-top: 50px;
+    }
+
+    .sustainable {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    .button {
+        padding-left: 20px;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .hhh {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .statistics {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .s1, .s2, .s3 {
+        width: 90%;
+        height: auto;
+      
+    }
+    .end{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: 1fr; /* Stack testimonials vertically */
+    }
+}
+
+/* Small Phones (Under 480px) */
+@media screen and (max-width: 480px) {
+    .building {
+        font-size: 28px;
+    }
+    
+    .btn {
+        width: 100%; /* Full width buttons for easier tapping */
+    }
 }
